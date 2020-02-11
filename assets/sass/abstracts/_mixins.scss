@@ -1,0 +1,8 @@
+@mixin centrado_texto {
+    text-align: center;
+}
+
+@mixin fuera_margen {
+    padding: 0;
+    margin: 0;
+}

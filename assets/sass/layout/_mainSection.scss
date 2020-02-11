@@ -1,0 +1,21 @@
+main {
+    height: 100vh;
+    background-image: url(../img/bg-hero.svg);
+    background-position: right bottom;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    padding: 0 30px;
+    margin: 0;
+    // background-color: red;
+    p {
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        background-size: 100%;
+        padding-bottom: 100px;
+        margin-bottom: -100px;
+    }
+}

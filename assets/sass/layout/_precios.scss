@@ -1,0 +1,60 @@
+.precios {
+    height: 100vh;
+    background-image: url(../img/bg-price.svg);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 0 50px;
+    // background-color: red;
+}
+
+.card {
+    // background-color: $white;
+    background-color: lightseagreen;
+    width: 80vw;
+    height: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-sizing: border-box; // padding: 10px;
+    h4 {
+        margin: 0;
+        font-family: $opensans!important;
+        font-weight: $regular!important;
+    }
+}
+
+.card_precio {
+    font-family: $raleway;
+    font-size: $xxxx-large;
+    font-weight: bold;
+    @include fuera_margen;
+    padding: 10px 0;
+}
+
+.card_titulo {
+    font-family: $opensans;
+    font-size: $x-large;
+    font-weight: regular;
+    @include fuera_margen;
+    padding: 10px 0;
+}
+
+.card_bordes {
+    border-top: 1px solid $spanishGray;
+    border-bottom: 1px solid $spanishGray;
+    min-height: 200px;
+    li {
+        padding: 10px 0;
+        font-family: $raleway;
+    }
+}
+
+.precios_titulo {
+    color: $white;
+}
+
+@media (min-width:768px) {
+    .card {
+        width: 25vw;
+    }
+}

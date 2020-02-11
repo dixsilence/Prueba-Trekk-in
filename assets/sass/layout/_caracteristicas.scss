@@ -1,0 +1,6 @@
+.caracteristicas {
+    @include centrado_texto;
+    p {
+        text-align: left;
+    }
+}

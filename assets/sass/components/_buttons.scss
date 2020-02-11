@@ -1,0 +1,25 @@
+// .boton_registro {
+//     background-color: $ballBlue;
+// }
+a {
+    font-family: $raleway;
+    font-weight: $bold;
+    color: $white;
+    text-decoration: none;
+}
+
+.boton {
+    height: 30px;
+    width: 100px;
+    background-color: $ballBlue;
+    border: none;
+    padding: 5px;
+    // margin-left: 20px;
+}
+
+.boton_grande {
+    height: 40px;
+    width: 100%;
+    // padding: 20px;
+    font-size: $medium;
+}
