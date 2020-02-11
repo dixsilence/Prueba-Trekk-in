@@ -1,60 +1,98 @@
-.precios {
-    height: 100vh;
-    background-image: url(../img/bg-price.svg);
-    background-position: bottom;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    padding: 0 50px;
-    // background-color: red;
-}
-
-.card {
-    // background-color: $white;
-    background-color: lightseagreen;
-    width: 80vw;
-    height: 500px;
-    padding: 20px;
-    margin-bottom: 50px;
-    box-sizing: border-box; // padding: 10px;
-    h4 {
-        margin: 0;
-        font-family: $opensans!important;
-        font-weight: $regular!important;
+    .precios {
+        height: 100%;
+        background-image: url(../img/bg-price.svg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // padding: 0 50px;
+        // background-color: red;
     }
-}
-
-.card_precio {
-    font-family: $raleway;
-    font-size: $xxxx-large;
-    font-weight: bold;
-    @include fuera_margen;
-    padding: 10px 0;
-}
-
-.card_titulo {
-    font-family: $opensans;
-    font-size: $x-large;
-    font-weight: regular;
-    @include fuera_margen;
-    padding: 10px 0;
-}
-
-.card_bordes {
-    border-top: 1px solid $spanishGray;
-    border-bottom: 1px solid $spanishGray;
-    min-height: 200px;
-    li {
-        padding: 10px 0;
-        font-family: $raleway;
+    
+    .precios_contenedor {
+        // background-color: red;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 80vw;
+        height: 100%;
     }
-}
-
-.precios_titulo {
-    color: $white;
-}
-
-@media (min-width:768px) {
+    
+    .card_deck {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     .card {
-        width: 25vw;
+        background-color: $white;
+        width: 80vw;
+        padding: 20px;
+        margin-bottom: 50px;
+        box-sizing: border-box; // padding: 10px;
+        h4 {
+            margin: 0;
+            font-family: $opensans;
+            font-weight: $regular;
+        }
+        display: flex;
+        justify-content: center;
     }
-}
+    
+    //
+    //Formato del texto de las cards
+    //
+    .precios_titulo {
+        color: $white;
+        text-align: center;
+    }
+    
+    .card_titulo {
+        font-family: $opensans;
+        font-size: $x-large;
+        font-weight: $regular;
+        @include fuera_margen;
+        padding: 10px 0;
+    }
+    
+    .card_precio {
+        font-family: $raleway;
+        font-size: $xxxx-large;
+        font-weight: bold;
+        @include fuera_margen;
+        padding: 10px 0;
+    }
+    
+    .card_bordes {
+        border-top: 1px solid $spanishGray;
+        border-bottom: 1px solid $spanishGray;
+        min-height: 200px;
+        li {
+            padding: 10px 0;
+            font-family: $raleway;
+        }
+    }
+    
+    //////////////////////////
+    @media (min-width:768px) {
+        .card {
+            width: 30vw;
+            // display: flex;
+        }
+        .precios_contenedor {
+            width: 70vw;
+        }
+        .card_deck {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .precios {
+            height: 100%;
+            background-image: url(../img/bg-price.svg);
+            background-position: top;
+            background-repeat: no-repeat;
+            // background-size: 100%;
+            padding-top: 150px;
+            margin-top: -150px;
+        }
+    }
