@@ -82,9 +82,11 @@ nav {
 
   .lista {
     display: flex;
+    align-items: left;
     list-style-type: none;
   }
   .lista li {
+    font-family: "Raleway", sans-serif;
     padding-left: 10px;
   }
 }
@@ -461,7 +463,6 @@ main p {
   }
 
   .caracteristicas_contenedor {
-    background-color: red;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;

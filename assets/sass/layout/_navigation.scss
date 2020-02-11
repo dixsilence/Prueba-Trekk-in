@@ -46,8 +46,10 @@
         }
         .lista {
             display: flex;
+            align-items: left;
             list-style-type: none;
             li {
+                font-family: $raleway;
                 padding-left: 10px;
             }
         }
