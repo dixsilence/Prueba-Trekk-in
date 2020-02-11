@@ -43,8 +43,8 @@ nav {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  background-color: violet;
-  height: 100px !important;
+  height: 100px;
+  background-color: #FFF;
   padding: 0 50px;
 }
 
@@ -446,10 +446,41 @@ main p {
 }
 .caracteristicas {
   text-align: center;
-  height: 90vh;
+  height: 100vh;
+  padding: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .caracteristicas p {
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .caracteristicas {
+    padding-top: 0px;
+  }
+
+  .caracteristicas_contenedor {
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+    align-items: center !important;
+  }
+}
+.animation-element {
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(0px, 20px, 0px);
+  transition-delay: 1s;
+  position: relative;
+}
+
+.animation-element.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
 
 footer {
@@ -462,26 +493,54 @@ footer {
 footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 footer ul li {
   list-style: none;
-}
-footer p {
-  text-align: center;
 }
 
 .footer_links {
   padding: 10px;
 }
 
+.footer_posicion_right {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer_links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  footer ul {
+    width: 100px;
+    display: inline-block;
+  }
+
+  .footer_posicion_left {
+    display: flex;
+    padding: auto 0;
+    width: 500px;
+  }
+
+  .footer_posicion_right {
+    text-align: right;
+  }
+}
 .precios {
   height: 100%;
   background-image: url(../img/bg-price.svg);
-  background-position: top;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 300px;
+  margin-top: -300px;
 }
 
 .precios_contenedor {
@@ -572,23 +631,32 @@ footer p {
 }
 a {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 .boton {
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 150px;
   background-color: #2AB7CA;
   border: none;
-  padding: 5px;
 }
 
 .boton_grande {
   height: 40px;
   width: 100%;
   font-size: 16px;
+}
+
+.boton_sin_fondo {
+  background-color: #FFF;
+}
+.boton_sin_fondo a {
+  color: #8F9199;
 }
 
 /*# sourceMappingURL=style.css.map */

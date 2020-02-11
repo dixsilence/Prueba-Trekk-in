@@ -1,9 +1,11 @@
     .precios {
         height: 100%;
         background-image: url(../img/bg-price.svg);
-        background-position: top;
+        background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
+        padding-top: 300px;
+        margin-top: -300px;
         // padding: 0 50px;
         // background-color: red;
     }
@@ -91,7 +93,6 @@
             background-image: url(../img/bg-price.svg);
             background-position: top;
             background-repeat: no-repeat;
-            // background-size: 100%;
             padding-top: 150px;
             margin-top: -150px;
         }

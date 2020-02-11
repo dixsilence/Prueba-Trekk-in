@@ -3,6 +3,45 @@
     p {
         text-align: left;
     }
-    height:90vh;
+    height:100vh;
+    padding: 0 auto;
+    padding-top:100px;
+    padding-bottom:100px;
     // background-color: limegreen;
+}
+
+@media (min-width:768px) {
+    .caracteristicas {
+        padding-top: 0px;
+    }
+    .caracteristicas_contenedor {
+        background-color: red;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 80%;
+        align-items: center!important;
+        // height: 100%;
+    }
+}
+
+//ANIMACIÓN
+//Como es tan poco no es necesario hacer un parcial para este elemento, vale con colocarlo acá nomás
+.animation-element {
+    opacity: 0;
+    transition: all 500ms linear;
+    // -moz-transform: translate3d(0px, 10px, 0px);
+    // -webkit-transform: translate3d(0px, 10px, 0px);
+    // -o-transform: translate3d(0px, 10px, 0px);
+    // -ms-transform: translate3d(0px, 10px, 0px);
+    transform: translate3d(0px, 20px, 0px);
+    transition-delay: 1s;
+    position: relative;
+}
+
+//in-view anima el elemento en la medida que es visualizado
+.animation-element.in-view {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }

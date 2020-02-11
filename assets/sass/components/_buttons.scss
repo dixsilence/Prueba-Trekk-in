@@ -3,17 +3,20 @@
 // }
 a {
     font-family: $raleway;
-    font-weight: $bold;
+    font-weight: $regular;
     color: $white;
+    font-size: $medium;
+    font-weight: $regular;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 .boton {
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 150px;
     background-color: $ballBlue;
     border: none;
-    padding: 5px;
+    // padding: 5px;
     // margin-left: 20px;
 }
 
@@ -22,4 +25,11 @@ a {
     width: 100%;
     // padding: 20px;
     font-size: $medium;
+}
+
+.boton_sin_fondo {
+    background-color: $white;
+    a {
+        color: $spanishGray;
+    }
 }

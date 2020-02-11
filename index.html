@@ -33,7 +33,7 @@
         <div class="nav_menu">
 
             <div class="nav_menu_botonera">
-                <button class="boton"><a href="#">Iniciar sesión</a></button>
+                <button class="boton boton_sin_fondo"><a href="#">Iniciar Sesión</a></button>
                 <button class="boton"><a href="#">Regístrate</a></button>
             </div>
         </div>
@@ -50,17 +50,22 @@
 
 
     <section class="caracteristicas">
-        <div class="row d-flex justify-center">
-            <h3>Características</h3>
-        </div>
-        <div class="row">
-            <div class="col-11 col-md-6">
-                <img src="assets/img/bar-graph.svg">
+        <h3>Características</h3>
+        <div class="caracteristicas_contenedor row ">
+
+            <div class="col-11 col-md-3">
+                <!--INSERTO PARA ANIMAR-->
+                <div class="animation-element">
+                    <img src="assets/img/bar-graph.svg" alt="Gráfico">
+                </div>
+                <!--FIN DE INSERTO PARA ANIMAR-->
             </div>
+
             <div class="col-11 col-md-4">
                 <h5>Estadísticas de tu progreso</h5>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum mollitia, ducimus, repellendus rem commodi aliquam minima qui sunt dignissimos eos labore laudantium dolorem dolore sint? Suscipit illum voluptatem est distinctio.</p>
             </div>
+
         </div>
     </section>
 
@@ -111,20 +116,24 @@
 
     <footer>
         <div class="footer_links">
-            <ul>
+
+
+            <ul class="footer_posicion_left">
                 <li>Legal</li>
                 <li>Cookies</li>
                 <li>Sobre anuncios</li>
             </ul>
+
+
+            <p class="footer_posicion_right">© 2018 Trekk-in SpA.</p>
+
         </div>
-        <p>©2018 Trekk-in SpA.</p>
+
     </footer>
 
     <!--JS-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
-    </script>
-    <script src="assets/js/grt-responsive-menu.js"></script>
-    </script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/animate.js"></script>
 </body>
 
 </html>
